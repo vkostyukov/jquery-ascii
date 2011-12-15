@@ -3,6 +3,7 @@ jQuery.ascii
 jQuery.ascii is an extrimally simple & lightweight jQuery plugin for HTML-TO-ASCII table converting.
 
 Author: Vladimir Kostykov <vladimir.kostukov@gmail.com>
+
 License: Apache 2.0 (http://www.apache.org/licenses/LICENSE-2.0.html)
 
 Usage example
@@ -16,14 +17,14 @@ Source table
     </table>
 
 jQuery code
-    $(document).ready(function() {
-        $("#ascii-table").html($("#html-table").ascii());
-    });
+	$(document).ready(function() {
+		$("#ascii-table").html($("#html-table").ascii());
+	});
 
 Result table
-+---------------------+
-| Header 1 | Header 2 |
-+---------------------+
-| Cell 1   | Cell 2   |
-| Cell 3   | Cell 4   |
-+---------------------+
+	+---------------------+
+	| Header 1 | Header 2 |
+	+---------------------+
+	| Cell 1   | Cell 2   |
+	| Cell 3   | Cell 4   |
+	+---------------------+

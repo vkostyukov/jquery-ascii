@@ -10,6 +10,7 @@ Usage example
 =============
 
 Source table
+
 	<table id="html-table">
 		<tr><th>Header 1</th><th>Header 2</th><tr>
 		<tr><td>Cell 1</td><td>Cell 2</td><tr>
@@ -17,11 +18,13 @@ Source table
 	</table>
 
 jQuery code
+
 	$(document).ready(function() {
 		$("#ascii-table").html($("#html-table").ascii());
 	});
 
 Result table
+
 	+---------------------+
 	| Header 1 | Header 2 |
 	+---------------------+

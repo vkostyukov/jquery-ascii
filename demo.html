@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> jQuery.ASCII plugin example </title>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" src="jquery.ascii.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#ascii-table").html($("#html-table").ascii());
+		});
+	</script>
+</head>
+<body>
+<h2> Source table #html-table </h2>
+<table id="html-table" border="1">
+	<thead><tr><th>Head 1</th><th>Head 2</th></tr></thead>
+	<tbody>
+		<tr><td>Cell 1</td><td>Cell 2</td></tr>
+		<tr><td>Cell 3</td><td>Cell 4</td></tr>
+		<tr><td>Cell 5555</td><td>Cell 66666</td></tr>
+		<tr><td>Cell 7777777</td><td>Cell 88888888</td></tr>
+	</tbody>
+</table>
+<br />
+<h2> Result table #ascii-table </h2>
+<div id="ascii-table" style="font-family: monospace; font-size: 12px;"> </div>
+<br />
+<h2> jQuery code </h2>
+<div style="font-family: monospace; font-size: 12px;">
+$(document).ready(function() { <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;$("#ascii-table").html($("#html-table").ascii()); <br/>
+});
+</div>
+</body>
+</html>

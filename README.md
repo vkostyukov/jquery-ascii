@@ -17,13 +17,17 @@ Source table
 		<tr><td>Cell 3</td><td>Cell 4</td><tr>
 	</table>
 
+Target block
+
+	<div id="ascii-table"></div>
+
 jQuery code
 
 	$(document).ready(function() {
 		$("#ascii-table").html($("#html-table").ascii());
 	});
 
-Result table
+Result table in #ascii-block
 
 	+---------------------+
 	| Header 1 | Header 2 |

@@ -3,7 +3,7 @@
  *
  * Version: 0.1.0 (Dec 2011)
  *
- * Copyright 2011, Vladimir Kosytukov <vladimir.kostukov@gmail.com>
+ * Copyright 2011, Vladimir Kostyukov <vladimir.kostukov@gmail.com>
  * License: http://www.apache.org/licenses/LICENSE-2.0.html
  */
 (function ($) {

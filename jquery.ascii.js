@@ -46,7 +46,7 @@
 			return "";
 		};
 
-		var dump = function(row) {
+		var process = function(row) {
 			var result = "";
 			for (var cell in row) {
 				result += "| " + row[cell] + repeat(space, 1 + lengths[cell] - row[cell].length);
@@ -59,15 +59,15 @@
 			total += lengths[length] + 2;
 		}
 
-		var out = "+" + (repeat("-", total)) + "+" + newline;
-		out += dump(header);
-		out += "+" + (repeat("-", total) ) + "+" + newline;
+		var out = "+" + repeat("-", total) + "+" + newline;
+		out += process(header);
+		out += "+" + repeat("-", total) + "+" + newline;
 
 		for (var row in data) {
-			out += dump(data[row]);
+			out += process(data[row]);
 		}
 
-		out += "+" + (repeat("-", total) ) + "+" + newline;
+		out += "+" + repeat("-", total) + "+" + newline;
 
 		return out;
 	};

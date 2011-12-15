@@ -27,7 +27,7 @@ jQuery code
 		$("#ascii-table").html($("#html-table").ascii());
 	});
 
-Result table in #ascii-block
+Result table in #ascii-table block
 
 	+---------------------+
 	| Header 1 | Header 2 |

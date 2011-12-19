@@ -19,27 +19,24 @@
 			space = " ";
 		}
 
+		var lengths = [];
 		this.find("th").each(function() {
 			header[header.length] = $(this).html();
+			lengths[lengths.length] = $(this).html().length;
 		});
 
 		this.find("tr").each(function() {
 			var row = [];
+			var column = 0;
 			$(this).find("td").each(function() {
 				row[row.length] = $(this).html();
+				if ($(this).html().length > lengths[column]) {
+					lengths[column] = $(this).html().length;
+				}
+				column++;
 			});
 			if (row.length == header.length) data[data.length] = row;
 		});
-
-		var lengths = [];
-		for (var column in header) {
-			lengths[column] = header[column].length;
-			for (var row in data) {
-				if (data[row][column].length > lengths[column]) {
-					lengths[column] = data[row][column].length;
-				}
-			}
-		}
 
 		var repeat = function(string, times) {
 			if (times > 0) return new Array(times + 1).join(string);

@@ -7,30 +7,135 @@
 
 	<script type="text/javascript">
 		$(document).ready(function() {
-			$("#ascii-table").html($("#html-table").ascii());
+			$("#not-an-ascii").html($("#not-a-table").ascii());
+			$("#simple-ascii-table").html($("#simple-html-table").ascii());
+			$("#ascii-table-wo-header").html($("#table-wo-header").ascii());
+			$("#broken-ascii-table").html($("#broken-table").ascii());
+			$("#spanned-ascii-table").html($("#spanned-table").ascii());
 		});
 	</script>
 </head>
 <body>
-<h2> Source table #html-table </h2>
-<table id="html-table" border="1">
-	<thead><tr><th>Head 1</th><th>Head 2</th></tr></thead>
-	<tbody>
+	<h1> Not a table </h1>
+	<h2> Source #not-a-table </h2>
+	<div id="not-a-table" style="border: 1px; border-color: #444; border-style: solid;">
+		I am  simple div block.
+	</div>
+	<br />
+	<h2> Result #not-an-ascii </h2>
+	<div id="not-an-ascii" style="font-family: monospace; font-size: 12px;"> </div>
+	<br />
+	<h2> jQuery code </h2>
+	<div style="font-family: monospace; font-size: 12px;">
+		$(document).ready(function() { <br/>
+		&nbsp;&nbsp;&nbsp;&nbsp;$("#not-an-ascii").html(
+		<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$("#not-a-table").ascii()
+		<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;);
+		<br />
+		});
+	</div>
+	<hr />
+	<h1> Simple table </h1>
+	<h2> Source #html-table </h2>
+	<table id="simple-html-table" border="1">
+		<tr><th>Head 1</th><th>Head 2</th></tr>
+		<tbody>
+			<tr><td>Cell 1</td><td>Cell 2</td></tr>
+			<tr><td>Cell 3</td><td>Cell 4</td></tr>
+			<tr><td>Cell 5555</td><td>Cell 66666</td></tr>
+			<tr><td>Cell 7777777</td><td>Cell 88888888</td></tr>
+		</tbody>
+	</table>
+	<br />
+	<h2> Result #simple-ascii-table </h2>
+	<div id="simple-ascii-table" style="font-family: monospace; font-size: 12px;"> </div>
+	<br />
+	<h2> jQuery code </h2>
+	<div style="font-family: monospace; font-size: 12px;">
+		$(document).ready(function() { <br/>
+		&nbsp;&nbsp;&nbsp;&nbsp;$("#simple-ascii-table").html(
+		<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$("#simple-html-table").ascii()
+		<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;); <br/>
+		});
+	</div>
+	<hr />
+	<h1> Table w/o header </h1>
+	<h2> Source #table-wo-header </h2>
+	<table id="table-wo-header" border="1">
 		<tr><td>Cell 1</td><td>Cell 2</td></tr>
 		<tr><td>Cell 3</td><td>Cell 4</td></tr>
 		<tr><td>Cell 5555</td><td>Cell 66666</td></tr>
 		<tr><td>Cell 7777777</td><td>Cell 88888888</td></tr>
-	</tbody>
-</table>
-<br />
-<h2> Result table #ascii-table </h2>
-<div id="ascii-table" style="font-family: monospace; font-size: 12px;"> </div>
-<br />
-<h2> jQuery code </h2>
-<div style="font-family: monospace; font-size: 12px;">
-$(document).ready(function() { <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;$("#ascii-table").html($("#html-table").ascii()); <br/>
-});
-</div>
+	</table>
+	<br />
+	<h2> Result #ascii-table-wo-header </h2>
+	<div id="ascii-table-wo-header" style="font-family: monospace; font-size: 12px;"> </div>
+	<br />
+	<h2> jQuery code </h2>
+	<div style="font-family: monospace; font-size: 12px;">
+		$(document).ready(function() { <br/>
+		&nbsp;&nbsp;&nbsp;&nbsp;$("#ascii-table-wo-header").html(
+		<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$("#table-wo-header").ascii()
+		<br/>
+		&nbsp;&nbsp;&nbsp;&nbsp;);
+		<br />
+		});
+	</div>
+	<hr />
+	<h1> Broken table </h1>
+	<h2> Source #broken-table </h2>
+	<table id="broken-table" border="1">
+		<tr><th>Head 1</th><th>Head 2</th></tr>
+		<tr><td>Cell 1</td></tr>
+		<tr><td>Cell 3</td><td>Cell 4</td></tr>
+		<tr><td>Cell 5555</td><td>Cell 66666</td><td>Cell 77777777</td><td>Cell 8888888</td></tr>
+		<tr><td>Cell 99999999</td></tr>
+	</table>
+	<br />
+	<h2> Result #broken-ascii-table </h2>
+	<div id="broken-ascii-table" style="font-family: monospace; font-size: 12px;"> </div>
+	<br />
+	<h2> jQuery code </h2>
+	<div style="font-family: monospace; font-size: 12px;">
+		$(document).ready(function() { <br/>
+		&nbsp;&nbsp;&nbsp;&nbsp;$("#broken-ascii-table").html(
+		<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$("#broken-table").ascii()
+		<br/>
+		&nbsp;&nbsp;&nbsp;&nbsp;);
+		<br />
+		});
+	</div>
+	<hr />
+	<h1> Spanned table </h1>
+	<h2> Source #spanned-table </h2>
+	<table id="spanned-table" border="1">
+		<tr><th rowspan="2">Head 1</th><th colspan="2">Head 2</th></tr>
+		<tr><th colspan="2">Head 3</th></tr>
+		<tr><td rowspan="2">Cell 1</td><td colspan="2">Cell 2</td></tr>
+		<tr><td>Cell 3</td><td>Cell 4</td></tr>
+		<tr><td >Cell 5555</td><td rowspan="2" colspan="2">Cell 66666</td></tr>
+		<tr><td>Cell 99999999</td></tr>
+	</table>
+	<br />
+	<h2> Result #spanned-ascii-table </h2>
+	<div id="spanned-ascii-table" style="font-family: monospace; font-size: 12px;"> </div>
+	<br />
+	<h2> jQuery code </h2>
+	<div style="font-family: monospace; font-size: 12px;">
+		$(document).ready(function() { <br/>
+		&nbsp;&nbsp;&nbsp;&nbsp;$("#spanned-ascii-table").html(
+		<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$("#spanned-table").ascii()
+		<br/>
+		&nbsp;&nbsp;&nbsp;&nbsp;);
+		<br />
+		});
+	</div>
 </body>
 </html>

@@ -2,9 +2,9 @@ jQuery.ascii
 ============
 jQuery.ascii is an extrimally simple & lightweight (~1,5kb) jQuery plugin for HTML-TO-ASCII table converting.
 
-Author: Vladimir Kostyukov http://vkostyukov.ru
-License: Apache 2.0 (http://www.apache.org/licenses/LICENSE-2.0.html)
-Project page: https://github.com/vkostyukov/jquery-ascii
+* Author: Vladimir Kostyukov http://vkostyukov.ru
+* License: Apache 2.0 (http://www.apache.org/licenses/LICENSE-2.0.html)
+* Project page: https://github.com/vkostyukov/jquery-ascii
 
 Usage example
 =============

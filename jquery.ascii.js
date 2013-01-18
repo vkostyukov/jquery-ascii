@@ -1,7 +1,7 @@
 /*!
  * jQuery plugin for converting HTML tables into ASCII representation
  *
- * Version: 0.2.0 (Jun 2012)
+ * Version: 0.3.0 (Jan 2013)
  *
  * Copyright 2011-2012, Vladimir Kostyukov http://vkostyukov.ru
  * License: http://www.apache.org/licenses/LICENSE-2.0.html

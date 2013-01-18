@@ -31,7 +31,7 @@ $(document).ready(function() {
 });
 ```
 
-Result table in #ascii-table block
+Result table in <code>#ascii-table</code> block
 
 	+---------------------+
 	| Header 1 | Header 2 |
@@ -50,4 +50,4 @@ $("#html-table").ascii("raw")
 
 Other
 -----
-See demo.html for more details.
+See <code>demo.html</code> for more details.

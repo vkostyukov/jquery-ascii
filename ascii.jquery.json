@@ -1,0 +1,28 @@
+{
+  "name": "ascii",
+  "title": "jQuery ASCII",
+  "description": "Extrimally simple and lightweight jQuery plugin for HTML-to-ASCII table converting.",
+  "keywords": [
+    "ascii",
+    "table"
+  ],
+  "version": "1.0.0",
+  "author": {
+    "name": "Vladimir Kostyukov",
+    "url": "http://vkostyukov.ru"
+  },
+  "maintainers": [],
+  "licenses": [
+    {
+      "type": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  ],
+  "bugs": "https://github.com/vkostyukov/jquery-ascii/issues",
+  "homepage": "https://github.com/vkostyukov/jquery-ascii",
+  "docs": "https://github.com/vkostyukov/jquery-ascii/issues",
+  "download": "http://code.jquery.com/#ascii",
+  "dependencies": {
+    "jquery": ">=1.5"
+  }
+}

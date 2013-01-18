@@ -7,7 +7,7 @@ jQuery ASCII is an extrimally simple & lightweight (~1,5kb) jQuery plugin for HT
 * Project page: https://github.com/vkostyukov/jquery-ascii
 
 Usage example
-=============
+-------------
 
 Source table
 
@@ -41,7 +41,7 @@ Result table in #ascii-table block
 	+---------------------+
 
 Raw Table Format
-================
+----------------
 
 There is also "raw" format available for generated table. This format uses native symbols for spaces and newlines. The "raw" format can be specified by following:
 ```javascript
@@ -49,5 +49,5 @@ $("#html-table").ascii("raw")
 ```
 
 Other
-=====
+-----
 See demo.html for more details.

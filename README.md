@@ -31,7 +31,7 @@ $(document).ready(function() {
 });
 ```
 
-Result table in <code>#ascii-table</code> block
+Result table in `#ascii-table` block
 
 	+---------------------+
 	| Header 1 | Header 2 |
@@ -43,11 +43,11 @@ Result table in <code>#ascii-table</code> block
 Raw Table Format
 ----------------
 
-There is also "raw" format available for generated table. This format uses native symbols for spaces and newlines. The "raw" format can be specified by following:
+There is also `raw` format available for generated table. This format uses native symbols for spaces and newlines. The `raw` format can be specified by following:
 ```javascript
 $("#html-table").ascii("raw")
 ```
 
 Other
 -----
-See <code>demo.html</code> for more details.
+See `demo.html` for more details.
